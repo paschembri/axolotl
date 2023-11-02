@@ -98,6 +98,17 @@ accelerate launch -m axolotl.cli.inference examples/openllama-3b/lora.yml \
     --lora_model_dir="./lora-out"
 ```
 
+**Harware requirements**
+
+*This section will be updated with new data and examples*
+
+Fine tuning requires significant hardware resources, the following values may help you estimate the actual requirements:
+
+- a 7B models will require approx. 84 GB of VRAM for a full fine tune + 1 GB per 2k tokens
+- As a rule of thumb: < model size in B > x 12 gives the VRAM requirements in GB
+- Large batch size may require more VRAM
+
+
 ## Installation
 
 ### Environment
